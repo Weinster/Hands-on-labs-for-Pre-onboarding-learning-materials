@@ -8,7 +8,7 @@
     sizeof() operator return the size in bytes.
     for example:
         assuming that we initialize -- int arr[5];
-        in getting the size of the area, we use --- sizeof(arr)/sizeof(int) ---
+        in getting the length size of the arr, we use --- sizeof(arr)/sizeof(int) ---
         because normally int is 4 bytes and our sizeof(arr) is 5.
         5 * 4 = 20 bytes
         divided by the sizeof(int) is 4 bytes.
