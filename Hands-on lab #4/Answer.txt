@@ -1,0 +1,53 @@
+1. Declare a pointer to a short int and a pointer to a float.
+* Answer
+    short int *ptr1;
+    float *ptr2;
+
+2. Of what use is the sizeof() operator?
+* Answer
+    sizeof() operator return the size in bytes.
+    for example:
+        assuming that we initialize -- int arr[5];
+        in getting the size of the area, we use --- sizeof(arr)/sizeof(int) ---
+        because normally int is 4 bytes and our sizeof(arr) is 5.
+        5 * 4 = 20 bytes
+        divided by the sizeof(int) is 4 bytes.
+        we get the length os 20/4 is 5.
+
+3. In a given operating system, a pointer to a short int is 32 bits wide. How wide is a pointer to long int in this same system?
+* Answer
+    A pointer to long int would also be 32 bits wide because pointers have same size regardless of the data type.
+
+4. Assume p is a pointer to a float. Further, assume, the value of p is 1000 (i.e., the address of the float it points 
+    to is 1000). The value of the float is 17.6. What value is p++? Define in words that *p and &p mean. Is there
+    a way to determine the values of *p and &p given the info above?
+* Answer
+    The value of p after p++ is 1004 because the size of float is 4 bytes then add it to the val1000.
+    * is used to dereference pointer. So if you print *p, it will print the value where pointer p is pointing.
+    &p mean the memory address of the pointer itself.
+    We can determine the values by
+    printf("%d", *p) - this will print the value of what its pointing to. but incase you increment p, it will no longer point where it previously pointed.
+    and printf("%p", &p) - will print the memory address of the pointer p.
+
+5. Given the initializations and memory map at the top, fill out the memory map on the bottom after the code has executed.
+    Assume pointers are 32 bits wide.
+* Answer
+    
+      Top   +-----------------------+
+            |                       |
+            |                       |
+            +-----------------------+
+   8000     |          101          | x
+            +-----------------------+
+            |                       |  
+            +-----------------------+
+   5000     |         8004          | y
+            +-----------------------+
+            |                       |
+            +-----------------------+
+   2000     |         5008          | z
+            +-----------------------+
+            |                       |
+            +-----------------------+
+
+                                                
