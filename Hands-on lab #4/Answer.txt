@@ -10,7 +10,7 @@
         assuming that we initialize -- int arr[5];
         in getting the length of the arr, we use --- sizeof(arr)/sizeof(int) ---
         because normally int is 4 bytes and our sizeof(arr) is 5.
-        5 * 4 = 20 bytes
+        5 * 4 = 20 bytes 
         divided by the sizeof(int) is 4 bytes.
         we get the length os 20/4 is 5.
 
