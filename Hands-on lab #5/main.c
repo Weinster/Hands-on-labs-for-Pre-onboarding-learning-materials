@@ -71,7 +71,7 @@ int main()
     {
         int choice;
         uint8_t num;
-        printf("Press 1 to push and 2 to pop and Anything to quit: ");
+        printf("Press 1 to push and 2 to pop and any number to quit: ");
         scanf("%d", &choice);
         if (choice == 1)
         {
